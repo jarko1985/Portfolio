@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 
 const useStyles = makeStyles((theme) => ({
   input: {
-    margin: theme.spacing(2),
+    margin: theme.spacing(1),
     cursor: "pointer",
   },
   form: {
@@ -75,7 +75,7 @@ const Contact = () => {
             variant="h5"
             style={{ color: "tomato", textAlign: "center", marginTop: "2rem" }}
           >
-            Hire or Contact Me
+            Contact Me
           </Typography>
           <InputField
             name="name"
@@ -112,7 +112,7 @@ const Contact = () => {
             className={classes.input}
             label="Message"
             multiline
-            rows={10}
+            rows={7}
             variant="outlined"
             fullWidth={true}
             inputProps={{ style: { color: "#FFF" } }}

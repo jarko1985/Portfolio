@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 //CSS STYLES
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    width: theme.spacing(12),
+    height: theme.spacing(12),
     margin: theme.spacing(1),
   },
   title: {
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   btn: {
-    margin: theme.spacing(2),
+    margin: theme.spacing(1),
   },
 }));
 
