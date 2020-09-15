@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Card, Grid } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import NavBar from "./NavBar";
-import Progress from "./Progress";
 import Gauge from "./Gauge";
 
 const useStyles = makeStyles((theme) => ({
@@ -14,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
   gauge: {
     height: 200,
     width: 300,
-    border: "1px solid black",
     margin: "5rem auto",
     background: "#223F5A",
     color: "#000",
