@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   title: {
-    color: "#FFF",
+    color: "#2C6CBC",
     fontFamily: "Grandstander",
   },
   subTitle: {
-    color: "tan",
+    color: "#2C6CBC",
     marginBottom: "3rem",
     fontFamily: "Grandstander",
   },

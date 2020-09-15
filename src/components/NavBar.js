@@ -22,6 +22,7 @@ import {
   AssignmentInd,
   ContactMail,
   Home,
+  Assessment,
 } from "@material-ui/icons";
 
 import avatar from "../images/pp.jpg";
@@ -53,6 +54,11 @@ const menuItems = [
     listIcon: <Home />,
     listText: "Home",
     listPath: "/",
+  },
+  {
+    listIcon: <Assessment />,
+    listText: "Skills",
+    listPath: "/skills",
   },
   {
     listIcon: <AssignmentInd />,
