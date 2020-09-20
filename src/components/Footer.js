@@ -4,6 +4,7 @@ import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import Facebook from "@material-ui/icons/Facebook";
 import Youtube from "@material-ui/icons/YouTube";
 import LinkedIn from "@material-ui/icons/LinkedIn";
+import Github from "@material-ui/icons/GitHub";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -67,6 +68,20 @@ const Footer = () => {
             target="_blank"
           >
             <LinkedIn />
+          </Link>
+        }
+      />
+      <BottomNavigationAction
+        className={classes.root}
+        style={{ padding: 0 }}
+        icon={
+          <Link
+            to={{
+              pathname: "https://github.com/jarko1985",
+            }}
+            target="_blank"
+          >
+            <Github />
           </Link>
         }
       />

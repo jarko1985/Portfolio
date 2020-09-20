@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 import {
   Box,
-  Button,
   Card,
   CardActionArea,
   CardActions,
@@ -15,7 +15,9 @@ import NavBar from "./NavBar";
 import project1 from "../images/map.jpeg";
 import project2 from "../images/travel.jpeg";
 import project3 from "../images/car.jpeg";
-import project4 from "../images/mobile.jpeg";
+import project4 from "../images/corona.jpeg";
+import project5 from "../images/mobile.jpeg";
+import project6 from "../images/stats.jpeg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -105,12 +107,17 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" className={classes.btn1}>
+              <button size="small" color="primary" className="btn4">
                 share
-              </Button>
-              <Button size="small" color="primary" className={classes.btn2}>
-                Live Demo
-              </Button>
+              </button>
+              <Link
+                to={{ pathname: "https://www.ajmanded.ae/imap/" }}
+                target="_blank"
+              >
+                <button size="small" color="primary" className="btn3">
+                  Demo
+                </button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>
@@ -136,12 +143,17 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" className={classes.btn1}>
+              <button size="small" color="primary" className="btn4">
                 share
-              </Button>
-              <Button size="small" color="primary" className={classes.btn2}>
-                Live Demo
-              </Button>
+              </button>
+              <Link
+                to={{ pathname: "https://norrdex-v1.netlify.app/" }}
+                target="_blank"
+              >
+                <button size="small" color="primary" className="btn3">
+                  Demo
+                </button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>
@@ -167,16 +179,15 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" className={classes.btn1}>
+              <button size="small" color="primary" className="btn4">
                 share
-              </Button>
-              <Button size="small" color="primary" className={classes.btn2}>
-                Live Demo
-              </Button>
+              </button>
+              <button size="small" color="primary" className="btn3">
+                Demo
+              </button>
             </CardActions>
           </Card>
         </Grid>
-
         {/* Project 4 */}
         <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
           <Card className={classes.cardContainer}>
@@ -190,6 +201,42 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h6">
+                  Corona Virus Live Tracker
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Project Description
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <button size="small" color="primary" className="btn4">
+                share
+              </button>
+              <Link
+                to={{ pathname: "https://covid19-react-jarko.netlify.app/" }}
+                target="_blank"
+              >
+                <button size="small" color="primary" className="btn3">
+                  Demo
+                </button>
+              </Link>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        {/* Project 5 */}
+        <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project 1"
+                height="140"
+                image={project5}
+                style={{ padding: "5px", opacity: "0.9" }}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6">
                   E Commerce Mobile Application
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -198,12 +245,48 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" className={classes.btn1}>
+              <button size="small" color="primary" className="btn4">
                 share
-              </Button>
-              <Button size="small" className={classes.btn2}>
-                Live Demo
-              </Button>
+              </button>
+              <button size="small" className="btn3">
+                Demo
+              </button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        {/* Project 6 */}
+        <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project 1"
+                height="140"
+                image={project6}
+                style={{ padding: "5px", opacity: "0.9" }}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6">
+                  Corona Virus Charts Using D3JS
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  D3JS representation
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <button size="small" color="primary" className="btn4">
+                share
+              </button>
+              <Link
+                to={{ pathname: "https://d3js-covid19.netlify.app/" }}
+                target="_blank"
+              >
+                <button size="small" className="btn3">
+                  Demo
+                </button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

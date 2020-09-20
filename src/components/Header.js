@@ -1,10 +1,11 @@
 import React from "react";
-import { Avatar, Box, Grid, Typography, Button } from "@material-ui/core";
+import { Avatar, Box, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { ContactMail, AssignmentInd, Apps } from "@material-ui/icons";
+//import { ContactMail, AssignmentInd, Apps } from "@material-ui/icons";
 import Typed from "react-typed";
 import avatar from "../images/pp.jpg";
 import { Link } from "react-router-dom";
+import { Button, Icon } from "semantic-ui-react";
 
 //CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -14,11 +15,12 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   title: {
-    color: "#2C6CBC",
+    color: "#FFF",
     fontFamily: "Grandstander",
+    fontWeight: "bold",
   },
   subTitle: {
-    color: "#2C6CBC",
+    color: "#FFF",
     marginBottom: "3rem",
     fontFamily: "Grandstander",
   },
@@ -61,39 +63,31 @@ const Header = () => {
         />
       </Typography>
       <Grid container justify="center">
-        <Grid item xs={12} sm={8} md={2}>
+        <Grid style={{ marginBottom: 10 }} item xs={12} sm={8} md={2}>
           <Link to="/resume" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.btn}
-              startIcon={<AssignmentInd />}
-            >
-              Resume
+            <Button size="medium" color="green">
+              <Icon size="big" name="address card" /> Resume
             </Button>
           </Link>
         </Grid>
-        <Grid item xs={12} sm={8} md={2}>
+        <Grid style={{ marginBottom: 10 }} item xs={12} sm={8} md={2}>
           <Link to="/portfolio" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.btn}
-              startIcon={<Apps />}
-            >
-              Portfolio
+            <Button size="medium" color="green">
+              <Icon size="big" name="user" /> Portfolio
+            </Button>
+          </Link>
+        </Grid>
+        <Grid style={{ marginBottom: 10 }} item xs={12} sm={8} md={2}>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <Button size="medium" color="green">
+              <Icon size="big" name="mail" /> Contact
             </Button>
           </Link>
         </Grid>
         <Grid item xs={12} sm={8} md={2}>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.btn}
-              startIcon={<ContactMail />}
-            >
-              Contact
+          <Link to="/skills" style={{ textDecoration: "none" }}>
+            <Button size="medium" color="green">
+              <Icon size="big" name="file code" /> Skills
             </Button>
           </Link>
         </Grid>

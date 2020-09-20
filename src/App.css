@@ -1,7 +1,66 @@
 body {
-  background: url(./images/bg06.jpeg) no-repeat center top fixed;
+  background: url(./images/bg01.jpg) no-repeat center top fixed;
   -webkit-background: cover;
   -moz-background: cover;
   -o-background: cover;
   background: cover;
+}
+
+.btn3 {
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+
+.btn3:hover {
+  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color: #5cb811;
+  color: aliceblue;
+}
+
+.btn3:active {
+  position: relative;
+  top: 2px;
+}
+
+.btn4 {
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color: #f24537;
+  border-radius: 6px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+.btn4:hover {
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color: #c62d1f;
+  color: #ffffff;
+}
+
+.btn4:active {
+  position: relative;
+  top: 2px;
+}
+
+.headerBtn {
+  margin-bottom: 5px;
 }
